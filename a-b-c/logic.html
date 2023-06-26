@@ -1,0 +1,95 @@
+<h4>Logic operator</h4>
+Wadannan wasu operators ne da sakamakonsu yake bada Boolean (true ko false). Ana amfani dasu domin duba gaskiyar wani abu ko akasinsa ko ace abu ko babu. A logic 1 itace true 0 itace false.
+Wadannan operators din sune :
+<ol>
+<li> && logical AND</li>
+<li> || logical OR</li>
+ <li>! logical NOT</li>
+</ol>
+<b>AND logic && </b>anginata ne akan tsarin multiplication (*), saboda haka idan aka samu operand din farko da na biyu a matsayin true sakamakon ma zai zama true. 
+<pre>
+ 1*1=1
+ 1*0=0
+ 0*1=0
+ 0*0=0
+ Bool k = true;
+ Bool a = true;
+ K && A
+ //true.
+ </pre>
+<b>OR logic ||</b> anginata ne akan tsarin addition  (+), saboda haka idan aka samu dika ko daya daga cikin operands biyu a matsayin true sakamakon ma zai zama true. 
+<pre> 
+ 1+1=1
+ 1+0=1
+ 0+1=1
+ 0+0=0
+</pre>
+<b>NOT logic !</b> yana nufin akasin sakamakon da aka samu. K true ce sai mukace.
+<br>
+ !k to anan k tazama false.
+
+<h4>Comparison Logic operators</h4>
+Kamar de AND, OR da NOT logic, comparison operators suna bada sakamakon boolean (true ko false), ana amfani dasu domin duba gaskiyar wani abu ko akasinsa.
+Mudauka munada program kamar haka.
+<pre>
+<span>
+ Int k =9;
+ Int a = 1;
+</span>
+</pre>
+Sai muce k tafi a(k > a)  anan zamuga cewa ba haka bane domin k tana rike da 9 ne kuma tafi a me dauke da 1, to anan zamu samu false amatsayin amsa.
+Wadannan operators sune:
+<ol>
+ <li>== equal</li>
+ <li>!= NOT EQUAL</li>
+ <li>greater than</li>
+<li><. less than</li>
+ <li>>=greater than or equal</li>
+ <li><= less than or equal</li>
+</ol>
+ <b>== equal</b> ana amfani da wannan domin kwatanta operands biyu wajen kama da juna a value. Zamu hada program da zai bamu wani sakamakoidan ansamu true ko false, anan zamu duba idan 9 dede take da 6 zatace 9 is equal to 6.
+ <pre>
+ <span>
+ if(9 == 6)
+  {
+    print(“9 is equal to 6”);
+  }
+ else
+  {
+    print(“9 is not equal to 6”);
+  }
+ </span>
+ </pre>
+<b>!= NOT EQUAL</b> ana amfani da wannan domin nuna cewa operands biyu ba dede sukeba sabanin == equal operator.
+<pre>
+</pre>  
+  If(9 != 7)
+   {
+     print(“9is not equal to 7”);
+   }
+   else
+   {
+    print(“9 is equal to 7");
+   }
+    
+   
+  //9 is not equal to  7
+ <span>
+ </pre>
+ 
+<b>greater than</b><br>
+<b><<!---->less than</b><br>
+<b>=greater than or equal</b>  wannan operand din yanayin aiki biyu ne a lokaci daya,  da farko zai kamanta operand din farko da biyu idan tabashi false sai ya fifita na farko akan na biyu sai yabada sakamakon daya samu anan, kode true ko false. Mu dauka k yana rikeda 3 sannan a yana rike da 8, zan iya cewa computer ta bada true idan a yana dede da k ko yafi k, kenan idan aka samu akasin haka to k tagaza takai a, zamu samu false.
+<pre>
+<span>   
+   if(k >= a)
+    {
+      print(“k is equal to or greater than a”);
+    }
+    else
+    {
+    print(“k is less  than a”);
+    }
+ </span>
+ </pre>
+<b><= less than or equal</b> wannan ma kamar greater than or equal operator yake, yana bada damar duba abu biyu a lokaci daya, sai de shi wannan yana duba less than ne da equal.

@@ -1,0 +1,107 @@
+<h1>Inheritence A JavaScript</h1>
+ <div class="postimg">
+<div class="tableofcontent">
+    <b>Table of content</b>
+    <ul type="square">
+        <li>Inheritence</li>
+        <li>Call Method</li>
+        <li>Prototype-based Inheritence</li>
+    </ul>
+</div>
+
+<h4>Inheritence</h4>
+...
+<h4>Call Method</h4>
+Zamu iya amfani da call method muyi inheritence.
+<pre>
+syntax
+functionName.call(this keyword, parameterst);
+</pre>
+
+Yanzu mudana constructor function kamar haka:
+<pre><span>
+function con(fname,lname){
+            this.fname =  fname;
+            this.lname = lname;
+        }
+    </span></pre>
+Wannan function din zai bamu damar hada object daukeda properties guda biyu wato fname da lname.
+Sannan munada wani constructor function da yake bamu damar hada mname.
+<pre><span>
+ function fun2(mname){
+            this.mname = mname;
+        }
+    </span></pre>
+To anan munasan musamu fname da lname da nmane, a madadin mukara wani function din na uku zamuga code din zaiyi yawa to sai muyi amfani da call() method, sannan mukara parameters dinsa mukeso mu yi inheritence din.
+<pre><span>     
+  function fun2(mname, fname, lname){
+            con.call(this, fname,lname);
+            this.mname = mname;
+        }
+    </span></pre>
+Yanzu zamu shigar da instance.
+<pre><span>
+ const ns = new fun2("khalifa","ali","ahmad")
+ console.log(ns)
+ // ns => ali ahmad khalifa
+</span></pre>
+
+<h4>Prototype-based inheritance</h4>
+<p>
+Prototype wani property ne  wanda yake kunshe acikin kowanne constructor function a JavaScript, ana iya amfani dashi wajen yin inheritence. Muduba wannan:
+Munada constructor function kamar haka da instance guda biyu:
+<pre><span>
+       function member(fname,lname){
+            this.fname =  fname;
+            this.lname = lname;
+        }
+     const dev = new member("khalifa","ali");
+     const pro = new member("muhammad","ali");
+    </span></pre>
+munasan muhada function acikin dev object wanda zai bamu fname din da lname a hade, zamuyi haka:
+ <pre><span>
+  function member(fname,lname){
+            this.fname =  fname;
+            this.lname = lname;
+        }
+     const dev = new member("khalifa","ali");
+     const pro = new member("muhammad","ali");
+    // function din da zai bamu cikakken suna
+     dev.cikakkenSuna = function(){
+        return this.fname + this.lname;
+    }
+
+    // zamu kira function din anan
+    console.log(dev.cikakkenSuna())
+    
+yanzu anan dev.cikakkenSuna() zai bamu:
+Khalifa ali
+</span></pre>
+Haka shima object din pro zamu iya hada masa nasa function din. 
+To amma mu ba haka mukeso ba, so muke mu hada function dinda zai yi aiki tare da construction function dinmu ta yadda duk wani instance zai yi amfani dashi. To anan ne prototype yake aiki.
+
+<pre>
+Syntax
+
+SunanConstructorFunction.prototype.sunanFunction = funtion(){}
+        function member(fname,lname){
+            this.fname =  fname;
+            this.lname = lname;
+        }
+    </pre>
+    //    function din da duk wani instance zai iya amfani dashi
+    <pre><span>
+        member.prototype.cikakkenSuna = function(){
+            return this.fname + this.lname;
+        }
+     const dev = new member("khalifa","ali");
+     const pro = new member("muhammad","ali");
+// zamuyi console din duka instance  dinmu guda biyu
+ i.e dev da pro
+     console.log(dev.cikakkenSuna())
+     console.log(pro.cikakkenSuna())
+    </span></pre>
+zamu samu haka:
+Khalifaali
+Muhammadali
+<br>

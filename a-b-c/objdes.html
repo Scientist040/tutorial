@@ -1,0 +1,98 @@
+<h1>Object Destructuring</h1>
+     <div class="postimg">
+    <div class="tableofcontent">
+        <b>Table of content</b>
+        <ul type="square">
+            <li>Object destructuring</li>
+            <li>Property to variable</li>
+            <li>Multiple peoperties</li>
+            <li>Object Properties Function Parameters</li>
+            <li>Default values</li>
+            <li>Alias</li>
+            <li>Rest Object</li>
+        </ul>
+    </div>
+    <h4>Object Destructuring</h4>
+   
+Zamu fahimci wannan da wuri idan mukayi amfani da misali. Idan munasan dafa tajiya jolof shin zamu dauki duk abinda yake cikin store ne? Amsa itace aa saboda store dinmu yana dauke da kayan abinci da yawa, saboda haka zamu dauki iya abinda muke bukata ne.
+
+<pre>
+Syntax
+Var = {property} = expression.
+</pre>
+<h4>Property to variable</h4>
+Da object destructuring zamu kirkiri variable ta hanyar amfani da property da value din object.
+Munada object na store kamar haka:
+<pre><span>
+var store = {
+ name:"taliya",
+ title:"shinkafa",
+ kaya:"tattasai"
+}
+</span></pre>
+Idan muna bukatar kayan jolof zamu yishi kamar haka ne.
+<pre><span>var {name} = store;</span></pre>
+Wato anan kenan name shine property na store object, shi kuma store shine sunan object din da muka ciro abin daga cikinsa.
+A yanzu name yazama variable me zaman kansa idan mukayi:
+ <pre><span>console.log(name)</span></pre>
+zamuga taliya ne value dinsa.
+<h4>Multiple peoperties</h4>
+Sannan zamu iya ciro properties sama da daya ta hanyar sanya comma atsakaninsu kamar haka:
+ <pre><span>
+ var {name, title} = store;
+</span></pre>
+ Name => taliya<br>
+Title =>shinkafa
+<h4>Object Properties Function Parameters</h4>
+Zamu iya amfani da destructuring a funtion kamar haka:
+<pre><span>fun(store);</span></pre> 
+Anan nakira function din sannan nasa masa sunan object din a parameter.
+ <pre><span>
+     function fun({name,kaya}){
+    return data = "Sunan abinci" + name + "Kayan Hadi" +kaya;
+    }
+</span></pre>
+Abinda function din nan zaiyi return shine: 
+<pre>Sunan Abinci taliya Kayan hadi tattasai.</pre>
+<h4>Default values</h4>
+Wani lokacin babu property din da muka nufi cirowa daga object, misali na rubuta
+Var {taruhu} = store;
+Kunga acikin store object babu taruhu, to anan taruhu zai nuna undefined, amma zamu yi amfani da default value mu sama masa value aciki kamar haka:
+<pre><span>
+var {taruhu = ['daya']} = store;
+</span></pre>
+Anan gurin abinda yake faruwa shine idan akwai property din to zai dauki value dinsa idan babu zai dauki wanda aka sa masa misali kamar ‘daya’ da muka rubuta. Kenan dede yake da wannan:
+<pre><span>
+ var taruhu = store.taruhu == undefined ? 'daya' : store.taruhu;
+</span></pre>
+
+<h4>Alias</h4>
+Wani lokacin zamuji cewa munasan sunan variable din ya saba da sunan property din da mukaciro daga object to anan ne muke amfani da alias.
+<pre>
+Syntax 
+Var {property:aliasIdentifier} = store;
+</pre>
+Kenan
+<pre><span>
+var {taliya:science} = store;
+</span></pre>
+Anan science shine sunan sabon variable dinmu wanda yake dauke da value din taliya property.
+Dede yake da wannan
+<pre><span>
+var science = store.taliya;
+</span></pre>
+
+<h4>Rest Object</h4>
+Shikuma wannnan yana bamu damar kwashe sauran properties da suka rage acikin object bayan mun ciri wani daga ciki. Zamuyi amfani da spread operator(...) anan.
+<pre>
+Syntax
+Var {property, ...rest}= objectName;
+</pre>
+Anan property shine sunan property da muka ciro daga cikin object din kamar de yadda mukayi a farkon darasi sannan rest shine object dinda zai riki sauran properties din da bamu ciraba daga cikin object din. 
+<pre><span>
+    var {name, ...sauran} = store;
+
+Haka abin zai kasance:
+Name=> taliya
+Sauran = > {title:”shinkafa”, kaya:”tattasai”}
+</span></pre>
