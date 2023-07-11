@@ -64,21 +64,26 @@ top: -23px;}
    margin:10px;
   display: inline;
 }
-  .main{display: flex;
-    justify-content: space-around;}
-    .text{width: 25%;
+
+    .text{
+      display: block;
+      margin: auto;
     color: #504d4d;
     font-size: small;
     box-shadow: 0px 0px 24px #5C5696;
-    padding: 20px;
+   
     border-radius: 4px;}
   .formdiv{border-radius: 4px;
     background:url(bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20px;
+
     box-shadow: 0px 0px 24px #5C5696;
+      display: block;
+      margin: auto;
     }
+    .formdiv, .text{width: 95%;
+      padding: 10px;}
     textarea{resize: none;}
    textarea, input[type=text]{
         width: 100%;
@@ -108,30 +113,37 @@ hr{opacity: .3;}
 .ft i:hover{box-shadow: 0px 0px 24px #5C5696;
   border-radius: 4px 0 4px 0;}
 h3{color:#FFF;}
+@media only screen and (min-width:768px){
+  
+  .formdiv, .text{
+    padding: 20px;
+    }
+   textarea, input[type=text]{
+        padding: 12px 20px;
+        margin: 8px 0;
+      }
+}
 </style>
 </head>
 <body>
     <img  class="logo" src="..\fav.png">
     <span class="title">Design and Implementation of Online Tutorial App</span>
+
 <div class="main">
+
   <div class="text">
     <h3>Register As a Volunteer</h3>
-    we have successfully recieved your request to be a volunteer on this site,
-    we really appreciate this and you will shortly recieve a message in your provided email / whatsapp at the mean time you can log in as unverified volunteer. 
-    Thank you for your interest and steaking with us and believing in DIOTA.
-    really appreciate this and you will shortly recieve a message in your provided email / whatsapp at the mean time you can log in as unverified volunteer. 
-    Thank you for your inter successfully recieved your request to be a volunteer on this site,
-    we really appreciate
+   Volunteer is entitled for answering questions provided by the users. 
     <h3>Requrements</h3>
     <ol>
-      <li>this and you will shortl</li>
-      <li>this and you will shortl</li>
-      <li>this and you will shortl</li>
+      <li>You are programmer or developer.</li>
+      <li>Read the first requirement.</li>
+      <li>Make sure you fullfill the above requirements, thank you.</li>
     </ol>
-    ppreciate this and e this and you will shortly recieve a message in your provided email / whatsapp at the mean time you can log in as unverified volunteer. 
-    Thank you for your interest and sy recieve a message in your provided email / whatsapp at the mean time you can log in as unverified volunteer. 
-    Thank you for your inter
+    Make sure you fill all the textboxes before submitting. Write short note about your experience.
+    Appreciated for your interest.
    </div>
+   <br>
    <div class="formdiv">
     <form method="POST" >
     <input type="text" name="fullname" placeholder="Full name"><br><br>
@@ -166,11 +178,11 @@ h3{color:#FFF;}
     </div>
     
     <div>
-     <a href="mailto:all is fjjfa@gmail.com"><i class="fa fa-envelope"></i></a>
+     <a href="mailto:allinonehausa@gmail.com"><i class="fa fa-envelope"></i></a>
     </div>
     
     <div>
-     <a href="tel:+2349117058551"><i class="fa fa-phone"></i></a>
+     <a href="tel:+2349066947271"><i class="fa fa-phone"></i></a>
     </div>
     
     </div>
