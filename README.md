@@ -5,11 +5,10 @@
 
 
 TABLE OF CONTENTS
-File                                                                                                                       page
-i.	Technologies/languag3s…………...………………………………………19
-ii.	Software Requirement…………………………………...…………...….…22
-iii.	DATABASE DESIGN…………………………………………….……….33
-iv.	Pages/file and algorithm x fl0wcharts…..………………………………….10
+i.	Technologies/languages
+ii.	Software Requirement
+iii.	DATABASE DESIGN
+iv.	Pages/file and algorithm x fl0wcharts
 v.	Index page………………………………………………………………….44
 vi.	Admin login page…………………………………………………………..44
 vii.	Admin page………………………………………………………………...65
