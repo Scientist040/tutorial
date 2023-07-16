@@ -24,7 +24,7 @@
       {
       $query = "insert into volunteers (id, fullname, status, special, contact, note,password,username) values ('$id', '$fullname', '$status', '$special', '$contact', '$note', '$password','$username')";
       mysqli_query($con,$query);
-      echo "<div style='text-align:center;  padding: 10px;  color: red;'>
+      echo "<div style='text-align:center;  padding: 10px;  color: white;'>
       We have successfully recieved your request to be a volunteer on this site ".$fullname."
       we really appreciate this and you will shortly recieve an approval message in your provided email / whatsapp, at the mean time you can log in as unverified volunteer. 
       Thank you for your interest and steaking with us and believing in DIOTA.<br>
@@ -154,6 +154,7 @@ h3{color:#FFF;}
     <input type="text" name="password" placeholder="New password"><br><br>
     <button>Register</button>
    </form>
+   <br>Have an account? <a href="../volunteer-login.html">log in</a>
    </div>
 
 </div>
