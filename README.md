@@ -4,10 +4,10 @@
 
 
 
-TABLE OF CONTENTS
-i.	Technologies/languages
-ii.	Software Requirement
-iii.	DATABASE DESIGN
+## TABLE OF CONTENTS
+1 Technologies/languages
+- ii.	Software Requirement
+-iii.	DATABASE DESIGN
 iv.	Pages/file and algorithm x fl0wcharts
 v.	Index page………………………………………………………………….44
 vi.	Admin login page…………………………………………………………..44
