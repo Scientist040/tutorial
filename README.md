@@ -5,16 +5,17 @@
 
 
 ## TABLE OF CONTENTS
-1 Technologies/languages
-- ii.	Software Requirement
--iii.	DATABASE DESIGN
-iv.	Pages/file and algorithm x fl0wcharts
-v.	Index page………………………………………………………………….44
-vi.	Admin login page…………………………………………………………..44
-vii.	Admin page………………………………………………………………...65
-viii.	Volunteer Register Page……………………………………………………55
-ix.	Volunteer login page……………………………………………………….55
-x.	Volunteer page……………………………………………………………..44
+1. Technologies
+2. Software Requirement
+3. DATABASE DESIGN
+
+### Pages and algorithm x fl0wcharts
+- Index page………………………………………………………………….44
+- Admin login page…………………………………………………………..44
+- Admin page………………………………………………………………...65
+- Volunteer Register Page……………………………………………………55
+- Volunteer login page……………………………………………………….55
+- Volunteer page……………………………………………………………..44
 xi.	Questions and answers page………………………………………………..44
 xii.	Devel0per about……………………99
 
@@ -27,23 +28,23 @@ xii.	Devel0per about……………………99
 
 
 
-Technologies used
-i.	HTML x CSS 
-ii.	jQuery
-iii.	PHP X MySQL
-Software Requirement
-You guys know you need XAMPP Server so I won’t.
+### Technologies used
+- HTML x CSS
+- jQuery
+- PHP X MySQL
 
-I have implemented two roles WITH LOGIN system:
-i.	Volunteer
-ii.	Admin
+### Software Requirement
+You guys know you need XAMPP Server so I won’t.  
+I have implemented two roles WITH LOGIN system
+- Volunteer
+- Admin
 Admin role has full access to the system; they are responsible for the following:
-i.	Approve a volunteer.
-ii.	Admin removes volunteer from the system.
-iii.	Admin removes answer provided by a volunteer.
-iv.	Manage learners’ lesson effectively.
-v.	Ensure that learners question answers are based on their questions.
-vi.	Admin removes question asked by the user.
+- Approve a volunteer.
+- Admin removes volunteer from the system.
+- Admin removes answer provided by a volunteer.
+- Manage learners’ lesson effectively.
+- Ensure that learners question answers are based on their questions.
+- Admin removes question asked by the user.
 
 
 
@@ -55,24 +56,20 @@ vi.	Admin removes question asked by the user.
 
 
 
- DATABASE DESIGN
-There is fil3 f0r th3 databas3 in p f0ld3r, imp0rt it.
-ADMINISTRATOR LOGIN TABLE: 
-Field Name	Field Type	Field Length	Description
-Username	Varchar	(50)	
-Password	Varchar	(256)	
+## DATABASE DESIGN
+There is file f0r the database in **p folder**, import it.
+## ADMINISTRATOR LOGIN TABLE: 
+| Field Name	| Field Type	| Field Length	| Description |
+|----------|----------|----------|----------|
+| Username	| Varchar	(50) | 	
+| Password	| Varchar	(256)	| 
 
-Table above named admin in the database, serves as a repository for administrator details that will be able to have access to the entire details on the application. It is a table that stores the administrator login details.
-
-
-
-
+Table above named admin in the database, serves as a repository for administrator details that will be able to have access to the entire details on the application. 
+It is a table that stores the administrator login details.
 
 
 
-
-
-VOLUNTEER LOGIN TABLE: 
+### VOLUNTEER LOGIN TABLE: 
 Field Name	Field Type	Field Length	Description
 id 	Test	()	
 Fullname	Varchar	(30)	
